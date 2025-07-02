@@ -1,12 +1,16 @@
 import React from 'react';
 import Header from '../components/Header';
 import SpecialityMenu from '../components/SpecialityMenu';
+import TopDoctors from '../components/TopDoctors';
 
 const Home = () => {
     return (
-        <div>
+        <div className='max-w-7xl mx-auto'>
             <Header/>
             <SpecialityMenu/>
+            <TopDoctors/>
+            
+            
         </div>
     );
 };

@@ -2,9 +2,7 @@ import React from 'react';
 
 const Appointments = () => {
     return (
-        <div>
-            
-        </div>
+       <div></div>
     );
 };
 
