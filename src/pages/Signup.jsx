@@ -1,15 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Login = () => {
+const Signup = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-50">
       <div className="card bg-base-100 w-full max-w-sm shadow-2xl shadow-blue-300">
         <div className="card-body">
-          <h3 className="text-3xl font-medium text-center">Login</h3>
-          <p className="text-center mt-1 mb-4 text-sm text-gray-600">Please login to book an appointment</p>
+          <h3 className="text-3xl font-medium text-center">Create Account</h3>
+          <p className="text-center mt-1 mb-4 text-sm text-gray-600">Please sign up to book an appointment</p>
 
           <form>
+            <div className="form-control">
+              <label htmlFor="name" className="label">Full Name</label>
+              <input type="text" id="name" className="input input-bordered" placeholder="Your name" required />
+            </div>
+
             <div className="form-control mt-4">
               <label htmlFor="email" className="label">Email</label>
               <input type="email" id="email" className="input input-bordered" placeholder="Email" required />
@@ -37,4 +42,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;
